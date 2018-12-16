@@ -20,6 +20,10 @@
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
+  
+  <!-- ajax -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   <style>
     #bg {
       background: url(img/com_bg2.jpg);
@@ -152,8 +156,8 @@
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Restaurant Review</h3>
-            <div class="subheading mb-3">EAT</div>
-            <div>Full MEAN application deployed on AWS. The plateform that users can create resturants and cuisine type, as well as can add reviews with 1 to 5 stars on each restaurant.</div>
+            <div class="subheading mb-3">Eataly</div>
+            <div>Built a user-friendly restaurant review website that user can create restaurant information and add reviews with star rating actions.</div>
             <a href="http://18.144.4.13/">Link</a>
           </div>
           <div class="resume-date text-md-right">
@@ -163,9 +167,9 @@
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
-            <h3 class="mb-0">eCommerce</h3>
-            <div class="subheading mb-3">market</div>
-            <div>description</div>
+            <h3 class="mb-0">Live Chat</h3>
+            <div class="subheading mb-3">Chats</div>
+            <div>Used Socket.io technology and Angular front-end framework to build a real-time chat service. Multi-users can create messages and see users’ action at the same time.</div>
             <a href="">Link</a>
           </div>
           <div class="resume-date text-md-right">
@@ -239,44 +243,41 @@
 
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
         <ul class="list-inline dev-icons">
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-toggle="tooltip" title="html">
             <i class="fab fa-html5"></i>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-toggle="tooltip" title="css">
             <i class="fab fa-css3-alt"></i>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-toggle="tooltip" title="Javascript">
             <i class="fab fa-js-square"></i>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-toggle="tooltip" title="Python">
             <i class="fab fa-python"></i>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-toggle="tooltip" title="Java">
             <i class="fab fa-java"></i>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-toggle="tooltip" title="Angular">
             <i class="fab fa-angular"></i>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-toggle="tooltip" title="Node.js">
             <i class="fab fa-node"></i>
           </li>
-          <li class="list-inline-item">
-            <i class="fab fa-sass"></i>
-          </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-toggle="tooltip" title="npm">
             <i class="fab fa-npm"></i>
           </li>
-          <li class="list-inline-item">
-            <i class="fab fa-simplybuilt"></i>
+          <li class="list-inline-item" data-toggle="tooltip" title="MongoDB">
+            <i class="fas fa-database"></i>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-toggle="tooltip" title="Git/Github">
             <i class="fab fa-github"></i>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-toggle="tooltip" title="Amazon Web Servvices">
             <i class="fab fa-aws"></i>
           </li>
-          <li class="list-inline-item">
-            <i class="fas fa-database"></i>
+          <li class="list-inline-item" data-toggle="tooltip" title="Google VR">
+            <i class="fab fa-simplybuilt"></i>
           </li>
         </ul>
 
@@ -299,6 +300,12 @@
     </section>
 
   </div>
+
+  <script>
+  $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip(); 
+  });
+  </script>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
